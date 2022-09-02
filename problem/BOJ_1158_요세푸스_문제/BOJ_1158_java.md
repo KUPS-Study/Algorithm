@@ -25,7 +25,7 @@
 
 계산 과정의 이해를 돕기 위해 위 과정들을 그림으로 표현하면 다음과 같습니다.
 
-![1156_simulation](https://github.com/KUPS-Study/Algorithm/problem/BOJ_1158_요세푸스 문제/1158_simulation.gif)
+![1156_simulation](./1158_simulation.gif)
 
 
 &nbsp;
