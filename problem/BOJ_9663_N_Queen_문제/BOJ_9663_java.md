@@ -51,11 +51,11 @@ attackable 함수를 살펴보기전에 잠시 공격 가능한 구간에 대한
 
 ### 아래로 향하는 대각선
 
-![Untitled Diagram.drawio (4).png](N-Queen%20%E1%84%87%E1%85%A2%E1%86%A8%E1%84%8C%E1%85%AE%E1%86%AB%209663%201b34e65d0cf94441a83dad68318d8fe8/Untitled_Diagram.drawio_(4).png)
+![Untitled Diagram.drawio (4).png](Untitled_Diagram.drawio_(4).png)
 
 ### 위로 향하는 대각선
 
-![Untitled Diagram.drawio (3).png](N-Queen%20%E1%84%87%E1%85%A2%E1%86%A8%E1%84%8C%E1%85%AE%E1%86%AB%209663%201b34e65d0cf94441a83dad68318d8fe8/Untitled_Diagram.drawio_(3).png)
+![Untitled Diagram.drawio (3).png](Untitled_Diagram.drawio_(3).png)
 
 이어서 소스코드 설명이 있겠습니다.
 
