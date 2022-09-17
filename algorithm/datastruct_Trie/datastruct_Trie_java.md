@@ -141,17 +141,19 @@ public void add(int idx, char[] text){
 public boolean remove(int idx, char[] text){
     // 문자열 끝에 도달했을 경우
     if(idx == text.length){
-        if(isLastStr)
+        if(isLastStr){
             isLastStr = false;
+            return true;
+        }
 
-        return true;
+        return false;
     }
 
     int nextIdx = text[idx] - 97;
     if(next[nextIdx] == null)
         return false;
 
-    if(next[nextIdx].remove(idx + 1, text) && next[nextIdx].getCnt() > 0){
+    if(next[nextIdx].getCnt() > 0 && next[nextIdx].remove(idx + 1, text)){
         next[nextIdx].addCnt(-1);
 
         // 문자 삭제 이후 해당 문자의 카운트가 0이면 객체 삭제
@@ -229,10 +231,12 @@ class Trie{
     public boolean remove(int idx, char[] text){
 
         if(idx == text.length){
-            if(isLastStr)
+            if(isLastStr){
                 isLastStr = false;
+                return true;
+            }
 
-            return true;
+            return false;
         }
 
 
@@ -240,7 +244,7 @@ class Trie{
         if(next[nextIdx] == null)
             return false;
 
-        if(next[nextIdx].remove(idx + 1, text) && next[nextIdx].getCnt() > 0){
+        if(next[nextIdx].getCnt() > 0 && next[nextIdx].remove(idx + 1, text)){
             next[nextIdx].addCnt(-1);
 
             if(next[nextIdx].getCnt() == 0)
